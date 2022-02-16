@@ -67,7 +67,7 @@ public class Palmares<T extends Metal, S extends Participante> {
 	public String toString() {
 		return this.getId() + this.getMetal() + "O" + id + "(" + pureza + "%) de fecha:" + this.getFecha()
 				+ " ¿asignado?=" + this.isAsignada() + this.getPrueba() + this.getPrueba().getFecha()
-				+ this.getPrueba().getLugar();
+				+ this.getPrueba().getLugar() ; 
 	}
 
 	private long getFecha() {
