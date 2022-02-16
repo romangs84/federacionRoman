@@ -574,4 +574,23 @@ public class Principal4 {
 		return true;
 	}
 	
+	//Ejercicio 1 parte 7
+	private static void InscripcionAtleta(int elecc) {
+		Scanner in = new Scanner(System.in);
+		int subelecc = -1;
+		boolean valido = false;
+		switch (elecc) {
+		case 1:
+			System.out.println("Ha seleccionado 3.1 FEDERARSE (Nuevo ATLETA).");
+			Atleta nuevo = Atleta.nuevoAtleta();
+			System.out.println("El nuevo atleta introducido es: " + nuevo);
+			break;
+		case 2: 
+			System.out.println("Ha seleccionado 3.2 INSCRIPCIÓN de ATLETA en PRUEBA..");	
+			break;
+		default:
+		}
+		System.out.println("Volviendo al menú de ATLETAS...\n\n");
+	}
+	
 }

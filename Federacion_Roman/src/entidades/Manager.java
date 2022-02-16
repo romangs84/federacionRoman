@@ -124,10 +124,10 @@ public class Manager {
 	//Ejercicio 3 prueba 6
 	
     public String data() {
-	   return this.getPersona().getId() +"|" + this.getPersona().getNombre() + "|"+ this.getNifnie() + "|" + this.getPersona().getDocumentacion() + 
+	   return this.getPersona().getId() +"|" + this.getPersona().getNombre() + "|"+ this.getNifnie(dd/MM/YYYY) + "|" + this.getPersona().getDocumentacion() + 
 			                             "|" + this.getPersona().getFechaNac() + "|" + this.getPersona().getTelefono() + 
-			                             "|" + this.getManager().getId() + "|" + this.getManager().getTelefono() +
-			                             "|" + this.getManager().getDireccion(); 
+			                             "|" + getId() + "|" + getTelefono() + "|" + getDireccion();
+			                           
      }
 	
 }
