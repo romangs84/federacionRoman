@@ -1,5 +1,6 @@
 package entidades;
 
+import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
 
 import utils.Datos;
@@ -123,11 +124,10 @@ public class Manager {
 
 	//Ejercicio 3 prueba 6
 	
-    public String data() {
-	   return this.getPersona().getId() +"|" + this.getPersona().getNombre() + "|"+ this.getNifnie(dd/MM/YYYY) + "|" + this.getPersona().getDocumentacion() + 
-			                             "|" + this.getPersona().getFechaNac() + "|" + this.getPersona().getTelefono() + 
-			                             "|" + getId() + "|" + getTelefono() + "|" + getDireccion();
-			                           
-     }
+	public String data() {
+		return "" + persona.getId() + "|" + persona.getNombre() + "|" + persona.getNifnie().mostrar() + "|"
+				+ persona.getFechaNac().format(DateTimeFormatter.ofPattern("dd/MM/yyyy")) + "|" + persona.getTelefono()
+				+ "|" + this.id + "|" + this.telefono + "|" + this.direccion;
+	}
 	
 }

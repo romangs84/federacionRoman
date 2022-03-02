@@ -6,6 +6,8 @@ import java.time.LocalDate;
 public abstract class Metal {
 	public abstract float maximaPurezaAlcanzada();
 	public abstract float[] cotasPurezaEfectiva();
+	public abstract float getPureza();
+	
 	
 	public LocalDate fecha;
 	public boolean asignada = false;
@@ -31,5 +33,6 @@ public abstract class Metal {
 	public void setAsignada(boolean asignada) {
 		this.asignada = asignada;
 	}
+	
 	
 }
